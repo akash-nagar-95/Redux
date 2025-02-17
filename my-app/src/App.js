@@ -4,8 +4,8 @@ import { decrement, increment, reset, incrementByAmount } from './feature/counte
 import { useState } from 'react';
 
 function App() {
-  const count = useSelector((state) => state.counter.value);
   const [amount, setAmount] = useState(0);
+  const count = useSelector((state) => state.counter.value);
   const dispatch = useDispatch();
 
   function handleIncrementClick() {
